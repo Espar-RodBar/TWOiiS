@@ -1,0 +1,46 @@
+
+TWOiiS! (FONT Akaya Kanadaka)
+
+Landing page like LEGO.
+
+1.- Main menu
+It has a sticky-top main menu. When mouse over, or when the page it's on top, the menu can be seen. If scrolling, it's only showed a thick brand background color.
+
+LOGO COMPRAR DESCUBRIR AYUDA
+
+2.- Hero section
+"Juguetes de antes, para niños del ahora!"
+with two buttons, one to the shop, another for more info.
+
+3.- Second menu:
+Novedades 
+Exclusivos
+Ofertas
+Populares en pantalla
+Ideas
+Rebajas
+
+4.- Recomended
+grid display
+Card items with photo + name + price + buy button
+
+inside there are a favorite icon
+
+5.- Destacamos
+flex display
+noticias 
+
+6.- Footer
+
+QUIÉNES SOMOS
+The TWOiiS Group
+Noticias TWOiiS
+Sostenibilidad
+Declaración de transparencia de la cadena de suministro
+Certificación de productos
+Ofertas de trabajo
+
+ATENCIÓN AL CLIENTE
+Ponte en contacto con nosotros
+Piezas de repuesto
+Envíos y devoluciones
