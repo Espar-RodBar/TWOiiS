@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  color: #202020;
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: blueviolet;
+}
+
+.container {
+  width: 130rem;
+  margin: 0 auto;
+}
+
+.main-menu-box {
+  background-color: #fd8d49;
+}
+.main-menu-top {
+  background-color: #fdde6c;
+  height: 2rem;
+}
+
+.logo-text {
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 5.2rem;
+  display: block;
+}
+
+.main-nav {
+  align-self: center;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 10rem;
+  list-style: none;
+}
+
+.main-menu-bottom {
+  display: flex;
+  gap: 10rem;
+}
