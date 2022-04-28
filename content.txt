@@ -6,10 +6,35 @@ Landing page like LEGO.
 1.- Main menu
 It has a sticky-top main menu. When mouse over, or when the page it's on top, the menu can be seen. If scrolling, it's only showed a thick brand background color.
 
-LOGO COMPRAR DESCUBRIR AYUDA
+-LOGO
+
+-COMPRAR 
+Sets por tema
+Edades
+Rangos de precios
+ArtÃ­culos LEGO
+Intereses
+Pick and Build
+Exclusivos
+
+-DESCUBRIR
+Nuestros valores
+Nuestras apps
+Nuestras revistas
+Todos los temas LEGO
+Para fans adultos
+Colaboraciones LEGO
+
+-AYUDA
+Comprobar el estado de un pedido
+EnvÃ­os y devoluciones
+Encontrar una tienda
+Instrucciones de construcciÃ³n
+Preguntas frecuentes
+
 
 2.- Hero section
-"Juguetes de antes, para niños del ahora!"
+"Juguetes de antes, para niï¿½os del ahora!"
 with two buttons, one to the shop, another for more info.
 
 3.- Second menu:
@@ -32,15 +57,15 @@ noticias
 
 6.- Footer
 
-QUIÉNES SOMOS
+QUIï¿½NES SOMOS
 The TWOiiS Group
 Noticias TWOiiS
 Sostenibilidad
-Declaración de transparencia de la cadena de suministro
-Certificación de productos
+Declaraciï¿½n de transparencia de la cadena de suministro
+Certificaciï¿½n de productos
 Ofertas de trabajo
 
-ATENCIÓN AL CLIENTE
+ATENCIï¿½N AL CLIENTE
 Ponte en contacto con nosotros
 Piezas de repuesto
-Envíos y devoluciones
+Envï¿½os y devoluciones

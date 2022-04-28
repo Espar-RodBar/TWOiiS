@@ -20,17 +20,49 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  height: 10rem;
+}
 .main-menu-box {
   background-color: #fd8d49;
 }
 .main-menu-top {
+  /* position: relative; */
   background-color: #fdde6c;
   height: 2rem;
 }
 
+.main-menu-bottom {
+  height: 8rem;
+}
+
+.sticky .main-menu-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  z-index: 999;
+}
+
+.sticky .main-menu-box:hover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 2rem;
+  z-index: 999;
+}
+
 .logo-text {
   font-family: "Akaya Kanadaka", cursive;
-  font-size: 5.2rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #f43605;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid #000;
+  text-shadow: 2px 2px 0 #000, 0px 3px 2px #fdde6c;
+  align-self: center;
   display: block;
 }
 
@@ -40,11 +72,67 @@ body {
 
 .main-nav-list {
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
   list-style: none;
+}
+
+.main-nav-list a {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.main-nav-list a:link,
+.main-nav-list a:visited {
+  color: #202020;
+  text-decoration: none;
 }
 
 .main-menu-bottom {
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
+}
+
+.sub-menu {
+  position: absolute;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 2.4rem;
+  width: 45%;
+  height: 45vh;
+
+  /* Steps:
+    1) hide visually */
+  opacity: 0;
+
+  /* 2) make it unacessible */
+  pointer-events: none;
+
+  /* 3) hide it from screen readers */
+  visibility: hidden;
+}
+.nav-visible.sub-menu {
+  transform: translateX(0%);
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.sub-main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.sub-main-nav-list a {
+  font-size: 1.8rem;
+}
+.sub-main-nav-list a:link,
+.sub-main-nav-list a:visited {
+  color: #202020;
+  text-decoration: none;
 }
