@@ -3,24 +3,44 @@
  **********************/
 const mainNavElements = document.querySelectorAll(".main-nav-item a");
 
-const toggleVisible = (element) => {
-  console.log(element);
+const getNavElementClck = (element) => {
   const elementVal = element.innerHTML.toLowerCase();
-  const subMenuBox = document.querySelector(`.${elementVal}`);
-  if (subMenuBox.classList.contains("nav-visible")) {
+  return document.getElementsByClassName(`${elementVal}`)[0];
+};
+
+const toggleVisible = (element) => {
+  const subMenuBox = getNavElementClck(element);
+
+  if (subMenuBox.className.includes("nav-visible")) {
     subMenuBox.classList.remove("nav-visible");
   } else {
     subMenuBox.classList.add("nav-visible");
   }
 };
 
-const removeVisible = () => {
+const removeVisible = (activeElement) => {
+  const activeEl = getNavElementClck(activeElement);
   const visibleEl = document.querySelector(".nav-visible");
-  if (visibleEl) visibleEl.classList.remove("nav-visible");
+
+  if (visibleEl && activeEl != visibleEl)
+    visibleEl.classList.remove("nav-visible");
+};
+
+const renderNavBox = (element) => {
+  const positionNavBox = document
+    .querySelector(".main-nav")
+    .getBoundingClientRect().left;
+
+  const subMenuBoxUl =
+    getNavElementClck(element).querySelector(".sub-main-nav-list");
+  const x = positionNavBox + "px";
+  console.log(x, subMenuBoxUl);
+  subMenuBoxUl.style.paddingLeft = x;
 };
 
 const mainMenuHandler = (element) => {
-  removeVisible();
+  renderNavBox(element);
+  removeVisible(element);
   toggleVisible(element);
 };
 
