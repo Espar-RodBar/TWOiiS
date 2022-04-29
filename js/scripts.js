@@ -1,15 +1,25 @@
 /********************
  * NAVIGATION
  **********************/
-const mainNavElements = document.querySelectorAll(".main-nav-item a");
+const mainNavElements = document.querySelectorAll(".main-nav-item div");
 
-const getNavElementClck = (element) => {
+const toggleNavHeader = () => {
+  const header = document.querySelector(".header");
+  const isNavVisible = document.querySelector(".nav-visible");
+  if (!header.classList.contains("sub-nav-active")) {
+    header.classList.add("sub-nav-active");
+  } else if (!isNavVisible) {
+    header.classList.remove("sub-nav-active");
+  }
+};
+
+const getNavElementDiv = (element) => {
   const elementVal = element.innerHTML.toLowerCase();
   return document.getElementsByClassName(`${elementVal}`)[0];
 };
 
 const toggleVisible = (element) => {
-  const subMenuBox = getNavElementClck(element);
+  const subMenuBox = getNavElementDiv(element);
 
   if (subMenuBox.className.includes("nav-visible")) {
     subMenuBox.classList.remove("nav-visible");
@@ -19,7 +29,7 @@ const toggleVisible = (element) => {
 };
 
 const removeVisible = (activeElement) => {
-  const activeEl = getNavElementClck(activeElement);
+  const activeEl = getNavElementDiv(activeElement);
   const visibleEl = document.querySelector(".nav-visible");
 
   if (visibleEl && activeEl != visibleEl)
@@ -32,16 +42,17 @@ const renderNavBox = (element) => {
     .getBoundingClientRect().left;
 
   const subMenuBoxUl =
-    getNavElementClck(element).querySelector(".sub-main-nav-list");
+    getNavElementDiv(element).querySelector(".sub-main-nav-list");
+
   const x = positionNavBox + "px";
-  console.log(x, subMenuBoxUl);
-  subMenuBoxUl.style.paddingLeft = x;
+  subMenuBoxUl.style.marginLeft = x;
 };
 
 const mainMenuHandler = (element) => {
   renderNavBox(element);
   removeVisible(element);
   toggleVisible(element);
+  toggleNavHeader();
 };
 
 mainNavElements.forEach((element) => {
@@ -51,7 +62,8 @@ mainNavElements.forEach((element) => {
 
 ///////////////////////////////////////////////////////////
 // Sticky navigation
-const sectionTargetEl = document.querySelector(".section-hero");
+//////////////////////////////////////////
+const sectionTargetEl = document.querySelector(".hero-section");
 
 const obs = new IntersectionObserver(
   (entries) => {
