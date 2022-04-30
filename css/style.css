@@ -11,6 +11,8 @@ body {
   font-family: "Rubik", sans-serif;
   color: #202020;
   font-size: 2.4rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
   font-weight: 500;
   background-color: #fff;
 }
@@ -126,7 +128,7 @@ body {
 
   /* display: flex; */
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 
   /* Steps:
     1) hide visually */
@@ -169,22 +171,70 @@ body {
 *** HERO SECTION
 */
 .hero-section {
-  margin-bottom: 8rem;
+  margin: 8rem 12rem;
 }
 .hero-box {
-  background-image: linear-gradient(to right, #fd8d49, #fdde6c);
-  background-size: cover;
-  background-position: center;
-  height: 65vh;
+  /* height: 65vh; */
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* grid-template-rows: 1fr 1fr; */
 }
 .hero-left {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .primary-header {
-  position: absolute;
-  top: 10rem;
-  left: 10rem;
-  transform: rotate(-45deg);
+  font-size: 4.4rem;
+  line-height: 1.4;
+  letter-spacing: 1.1px;
 }
-.hero-right {
+.hero-right-img {
+  width: 100%;
+}
+
+.hero-buttons-box {
+  grid-column: 1 /-1;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.hero-btn.btn-info {
+  background-color: #feebe6;
+}
+.hero-btn.btn-info:hover {
+  background-color: #fdf1ee;
+  box-shadow: 0 1rem 3.2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-btn.btn-shop {
+  background-color: #922003;
+  color: #fff;
+}
+.hero-btn.btn-shop:hover {
+  background-color: #f43605;
+  box-shadow: 0 1rem 3.2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.hero-btn.btn-shop:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.2);
+  background-color: #f65e37;
+}
+.hero-btn.btn-info:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.135);
+  background-color: #fff;
 }

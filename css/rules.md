@@ -24,6 +24,8 @@ paragraph default: 1.6
 
 # 02 COLORS:
 
+## Primary:
+
 held orangeish
 #FD8D49
 psychrometric pale gold
@@ -31,23 +33,27 @@ psychrometric pale gold
 panting orangish red
 #F43605
 
-## Primary:
-
-#
-
 ## Tints:
 
-#
+#fdf1ee
+#feebe6
+#fdd7cd
+#f65e37
 
-#
+#fff8e2
+#fee898
 
-#
-
-#
+#ffe8db
+#fda46d
 
 ## Shades:
 
-#
+#922003
+#491001
+#cab256
+#4c4320
+#ca713a
+#331c0f
 
 ## greys:
 
@@ -63,7 +69,7 @@ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
 # 06 Border-radius
 
 default: 9px
-rounded; 11px
+rounded; 25px
 circle: 50%
 
 # 07 White-space
