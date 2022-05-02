@@ -167,6 +167,11 @@ body {
   text-decoration: none;
 }
 
+.sub-main-nav-list a:hover,
+.sub-main-nav-list a:active {
+  border-bottom: 2px solid #202020;
+}
+
 /***************************
 *** HERO SECTION
 */
@@ -237,4 +242,62 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.135);
   background-color: #fff;
+}
+
+/***********************************
+*** Shop-nav-bar section
+*********************************/
+.shop-nav-bar-list {
+  display: flex;
+  gap: 4.8rem;
+  justify-content: center;
+}
+.shop-nav-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shop-nav-bar-item a:link,
+.shop-nav-bar-item a:visited {
+  text-decoration: none;
+  color: #202020;
+  font-size: 1.6rem;
+}
+
+.shop-nav-bar-item:hover {
+  border-bottom: 2px solid #202020;
+}
+
+.icon-round-div {
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+.icon-round-div-external {
+  border-radius: 50%;
+  background: linear-gradient(to right top, #f5ab0c, #ffcc5d, #fff 99%);
+  padding: 2px;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon1 {
+  background-color: #ff987e91;
+}
+.icon2 {
+  background-color: #ffd57981;
+}
+.icon3 {
+  background-color: #98fa9d6c;
+}
+.icon4 {
+  background-color: #99b0fc7a;
+}
+.icon5 {
+  background-color: #fcbdfc77;
 }

@@ -33,6 +33,10 @@ psychrometric pale gold
 panting orangish red
 #F43605
 
+#5dff65
+#5d83ff
+#fc90fc
+
 ## Tints:
 
 #fdf1ee
