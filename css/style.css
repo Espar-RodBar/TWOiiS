@@ -101,7 +101,8 @@ body {
 
 .main-nav-list div {
   display: inline;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   color: #202020;
   text-transform: uppercase;
 }
@@ -156,6 +157,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  font-weight: 400;
 }
 
 .sub-main-nav-list a {
@@ -176,7 +178,7 @@ body {
 *** HERO SECTION
 */
 .hero-section {
-  margin: 8rem 12rem;
+  margin: 8rem 12.8rem;
 }
 .hero-box {
   /* height: 65vh; */
@@ -247,8 +249,13 @@ body {
 /***********************************
 *** Shop-nav-bar section
 *********************************/
+.shop-nav-bar-section {
+  margin-bottom: 9.6rem;
+}
+
 .shop-nav-bar-list {
   display: flex;
+
   gap: 4.8rem;
   justify-content: center;
 }
@@ -258,6 +265,7 @@ body {
   gap: 1.2rem;
   align-items: center;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .shop-nav-bar-item a:link,
@@ -265,6 +273,7 @@ body {
   text-decoration: none;
   color: #202020;
   font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .shop-nav-bar-item:hover {
@@ -300,4 +309,92 @@ body {
 }
 .icon5 {
   background-color: #fcbdfc77;
+}
+
+/***************************************************************
+** recomend section
+*******************************************************************/
+.recomend-section {
+  padding: 9.6rem 0 9.6rem 0;
+  background-color: #fff8e2;
+}
+
+.recomend-section .secondary-header {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+}
+
+.recomend-cards-box {
+  display: grid;
+  column-gap: 3.2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.recomend-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+  gap: 2.4rem;
+  position: relative;
+}
+
+.recomend-favorite-box {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.favorite-icon {
+  color: rgb(184, 24, 24);
+}
+
+.favorite-text {
+  font-size: 1.2rem;
+}
+
+.card-img {
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.recomend-item:hover .card-img {
+  transform: scale(1.05);
+}
+
+.card-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card-title {
+  font-size: 1.6;
+  font-weight: 400;
+}
+
+.card-price {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.card-button {
+  padding: 1.4rem 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: #fda46d;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #ffe8db;
+  box-shadow: inset 0 0 5rem #fee898;
 }

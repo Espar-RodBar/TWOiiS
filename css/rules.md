@@ -73,7 +73,7 @@ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
 # 06 Border-radius
 
 default: 9px
-rounded; 25px
+rounded: 25px
 circle: 50%
 
 # 07 White-space
