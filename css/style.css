@@ -1,3 +1,6 @@
+/*******************************
+**** general styles
+***************************/
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +19,13 @@ body {
   font-weight: 500;
   background-color: #fff;
 }
+
+.secondary-header {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+}
+
 /********************
 *** helper clases    
 */
@@ -36,7 +46,7 @@ body {
 
 /***************
 **** HEADER SECTION
-*/
+***********************/
 
 .header {
   height: 10rem;
@@ -47,21 +57,29 @@ body {
 }
 .main-menu-top {
   /* position: relative; */
-  height: 2rem;
+  height: 1rem;
   background-color: #fd8d49;
 }
 
 .main-menu-bottom {
-  height: 8rem;
+  height: 7rem;
+  display: flex;
+  gap: 8rem;
+  transform: all 0.3s;
 }
 
+/***** Sticky nav  **********/
 .sticky .main-menu-top {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 2rem;
+  height: 1rem;
   z-index: 999;
+}
+
+.sticky .main-menu-bottom {
+  display: none;
 }
 
 .sticky .sub-nav-active .main-menu-box,
@@ -70,12 +88,16 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 1rem;
   z-index: 999;
 }
 
-.visible .main-menu-box {
+.sticky .main-menu-box:hover .main-menu-bottom {
+  display: flex;
+  gap: 8rem;
 }
+
+/**** end sticky nav **************/
 
 .logo-text {
   font-family: "Akaya Kanadaka", cursive;
@@ -116,11 +138,6 @@ body {
   align-self: center;
 }
 
-.main-menu-bottom {
-  display: flex;
-  gap: 8rem;
-}
-
 .sub-menu {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
@@ -129,7 +146,7 @@ body {
 
   /* display: flex; */
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 
   /* Steps:
     1) hide visually */
@@ -176,7 +193,7 @@ body {
 
 /***************************
 *** HERO SECTION
-*/
+**************************/
 .hero-section {
   margin: 8rem 12.8rem;
 }
@@ -201,8 +218,6 @@ body {
 }
 
 .hero-buttons-box {
-  grid-column: 1 /-1;
-  grid-row: 2 / 3;
   display: flex;
   gap: 2.4rem;
   justify-content: center;
@@ -319,12 +334,6 @@ body {
   background-color: #fff8e2;
 }
 
-.recomend-section .secondary-header {
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 4.8rem;
-}
-
 .recomend-cards-box {
   display: grid;
   column-gap: 3.2rem;
@@ -349,6 +358,8 @@ body {
   left: 1rem;
   cursor: pointer;
   z-index: 5;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
 }
 
 .favorite-icon {
@@ -377,17 +388,22 @@ body {
 .card-title {
   font-size: 1.6;
   font-weight: 400;
+  padding-left: 1.6rem;
 }
 
 .card-price {
   font-size: 1.6rem;
   font-weight: 500;
+  padding-left: 1.6rem;
+  color: #202020;
+  font-weight: 400;
 }
 
 .card-button {
   padding: 1.4rem 1.8rem;
   font-size: 1.4rem;
   font-weight: 400;
+  color: #202020;
   background-color: #fda46d;
   text-align: center;
   transition: all 0.3s;
@@ -397,4 +413,58 @@ body {
 .card-button:hover {
   background-color: #ffe8db;
   box-shadow: inset 0 0 5rem #fee898;
+}
+.card-button:active {
+  background-color: #cab256;
+  box-shadow: inset 0 0 5rem #fff8e2;
+  color: #000;
+}
+
+/***************************
+*** Diversion sections
+****************************/
+.diversion-section {
+  margin: 9.6rem 0;
+}
+
+.diversion-box {
+  display: flex;
+
+  gap: 3.6rem;
+}
+
+.diversion-articulo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #f43605;
+  border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diversion-articulo-img {
+  width: 100%;
+
+  border-radius: 25px;
+}
+.diversion-articulo-header {
+  font-size: 1.8rem;
+  color: #fdf1ee;
+}
+
+.diversion-articulo-text {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+.diversion-btn {
+  /* display: inline-block; */
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  transition: all 0.3s;
+  background-color: #fdd7cd;
+  flex-basis: auto;
 }
