@@ -50,6 +50,11 @@ panting orangish red
 #ffe8db
 #fda46d
 
+#a7ffab
+#fca8fc
+#8ca5fa
+#f7e193
+
 ## Shades:
 
 #922003
@@ -58,9 +63,13 @@ panting orangish red
 #4c4320
 #ca713a
 #331c0f
+#425ebb
+#bb53bb
+#3cb843
 
 ## greys:
 
+#f5f5f5
 #767676
 #6f6f6f
 #555

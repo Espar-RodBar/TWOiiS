@@ -443,19 +443,6 @@ body {
   align-items: center;
 }
 
-.diversion-articulo:nth-child(4n - 3) {
-  background-color: #fdde6c;
-}
-.diversion-articulo:nth-child(4n - 2) {
-  background-color: #5d83ff;
-}
-.diversion-articulo:nth-child(4n -1) {
-  background-color: #fc90fc;
-}
-.diversion-articulo:nth-child(4n) {
-  background-color: #5dff65;
-}
-
 .diversion-articulo-img {
   width: 100%;
 
@@ -476,6 +463,76 @@ body {
   padding: 1.2rem 2.4rem;
   border-radius: 25px;
   transition: all 0.3s;
-  background-color: #fff;
+  background-color: #f5f5f5;
   flex-basis: auto;
+}
+
+.diversion-articulo:nth-child(4n - 3) {
+  background-color: #f7e193;
+}
+.diversion-articulo:nth-child(4n - 2) {
+  background-color: #8ca5fa;
+}
+.diversion-articulo:nth-child(4n -1) {
+  background-color: #fca8fc;
+}
+.diversion-articulo:nth-child(4n) {
+  background-color: #a7ffab;
+}
+
+.diversion-articulo:nth-child(4n - 3) .diversion-btn:hover {
+  box-shadow: 0 0 1rem #cab256;
+}
+.diversion-articulo:nth-child(4n - 2) .diversion-btn:hover {
+  box-shadow: 0 0 1rem #425ebb;
+}
+.diversion-articulo:nth-child(4n -1) .diversion-btn:hover {
+  box-shadow: 0 0 1rem #bb53bb;
+}
+.diversion-articulo:nth-child(4n) .diversion-btn:hover {
+  box-shadow: 0 0 1rem #3cb843;
+}
+
+.diversion-articulo:nth-child(4n - 3) .diversion-btn:active {
+  box-shadow: 0 0 1rem rgba(202, 179, 86, 0.5);
+}
+.diversion-articulo:nth-child(4n - 2) .diversion-btn:active {
+  box-shadow: 0 0 1rem rgba(66, 94, 187, 0.5);
+}
+.diversion-articulo:nth-child(4n -1) .diversion-btn:active {
+  box-shadow: 0 0 1rem rgba(187, 83, 187, 0.5);
+}
+.diversion-articulo:nth-child(4n) .diversion-btn:active {
+  box-shadow: 0 0 1rem rgba(60, 184, 66, 0.5);
+}
+
+.diversion-articulo .diversion-btn:active {
+  background-color: #fff;
+}
+/*****************************************************************
+** FOOTER
+**********************************************************************/
+.footer {
+  padding: 9.6rem 0;
+  background: linear-gradient(#fd8d49 60%, #ca713a 100%);
+}
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.footer-box .secondary-header {
+  font-size: 1.8rem;
+}
+
+.footer-box .logo-text {
+  display: block;
+  align-items: stretch;
+}
+.footer-p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #202020;
 }
