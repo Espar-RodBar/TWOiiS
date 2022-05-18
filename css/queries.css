@@ -1,0 +1,122 @@
+/*****************************************
+**  for width of 1328px small desktops
+*/
+@media (max-width: 83em) {
+  .main-menu-bottom {
+    padding: 0 4rem;
+  }
+
+  .recomend-section {
+    padding: 9.6rem 4rem;
+  }
+
+  .diversion-section {
+    margin: 9.6rem 4rem;
+  }
+  .diversion-articulo-text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
+
+/********************************
+** for width of 1152px
+*/
+@media (max-width: 72em) {
+  .primary-header {
+    font-size: 3.6rem;
+  }
+  .hero-section {
+    margin: 12.8rem 4rem;
+  }
+  /* recomend-section*/
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .diversion-box {
+    gap: 2.4rem;
+  }
+  .diversion-articulo {
+    padding: 2.4rem 1.6rem;
+  }
+  .diversion-articulo-header {
+    font-size: 1.4rem;
+  }
+}
+
+/********************************
+** for width of 960px
+*/
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/********************************
+** for width of 800px small tablets
+*/
+@media (max-width: 50em) {
+  .primary-header {
+    font-size: 3rem;
+  }
+  .hero-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recomend-cards-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .diversion-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+  .diversion-articulo-header {
+    font-size: 1.8rem;
+  }
+
+  .diversion-articulo-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+
+/********************************
+** for width of 600px smartphones
+*/
+
+@media (max-width: 37.5em) {
+  .primary-header {
+    text-align: center;
+  }
+
+  .secondary-header {
+    text-align: center;
+  }
+  .hero-box {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .hero-right-img {
+    grid-row: 1;
+  }
+  .recomend-cards-box {
+    grid-template-columns: 1fr;
+    padding: 0 2.4rem;
+    gap: 3.2rem;
+  }
+
+  .diversion-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2.4rem;
+    gap: 3.2rem;
+  }
+}
