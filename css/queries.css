@@ -100,6 +100,25 @@
   .secondary-header {
     text-align: center;
   }
+  .sticky .main-menu-box:hover .main-menu-bottom {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .main-menu-bottom {
+    gap: 1.2rem;
+    padding: 1.4rem;
+  }
+  .main-nav-list {
+    gap: 1.6rem;
+  }
+
+  .main-nav-item div {
+    font-size: 1.6rem;
+  }
+  .shop-nav-bar-list {
+    gap: 2.4rem;
+  }
+
   .hero-box {
     grid-template-columns: 1fr;
     gap: 3.2rem;
@@ -107,16 +126,53 @@
   .hero-right-img {
     grid-row: 1;
   }
-  .recomend-cards-box {
-    grid-template-columns: 1fr;
-    padding: 0 2.4rem;
-    gap: 3.2rem;
+
+  .shop-nav-bar-item a:link {
+    font-size: 1.2rem;
   }
 
+  .recomend-section {
+    padding: 6.4rem 1.4rem;
+  }
+
+  .recomend-cards-box {
+    /* grid-template-columns: 1fr; */
+    padding: 0 1.2rem;
+    gap: 1.6rem;
+  }
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .diversion-section {
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+  }
   .diversion-box {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 2.4rem;
+    padding: 0 1.2rem;
     gap: 3.2rem;
+  }
+  .diversion-articulo {
+    padding: 1.2rem 4.8rem;
+  }
+
+  .footer {
+    padding: 6.4rem 0;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
+  }
+
+  .footer-column {
+    gap: 0.8rem;
+  }
+
+  .footer-box .secondary-header {
+    margin-bottom: 1.6rem;
+    font-weight: 500;
   }
 }
