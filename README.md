@@ -35,52 +35,83 @@ paragraph default: 1.6
 
 held orangeish
 #FD8D49
+
 psychrometric pale gold
 #FDDE6C
+
 panting orangish red
 #F43605
 
+
 #5dff65
+
 #5d83ff
+
 #fc90fc
+
 
 ## Tints:
 
 #fdf1ee
+
 #feebe6
+
 #fdd7cd
+
 #f65e37
 
+
 #fff8e2
+
 #fee898
 
+
 #ffe8db
+
 #fda46d
 
+
 #a7ffab
+
 #fca8fc
+
 #8ca5fa
+
 #f7e193
+
 
 ## Shades:
 
 #922003
+
 #491001
+
 #cab256
+
 #4c4320
+
 #ca713a
+
 #331c0f
+
 #425ebb
+
 #bb53bb
+
 #3cb843
 
 ## greys:
 
 #f5f5f5
+
 #767676
+
 #6f6f6f
+
 #555
+
 #202020
+
 
 # 05 shadows
 
@@ -89,7 +120,9 @@ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
 # 06 Border-radius
 
 default: 9px
+
 rounded: 25px
+
 circle: 50%
 
 # 07 White-space
