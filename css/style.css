@@ -96,7 +96,7 @@ body {
   z-index: 999;
 }
 
-/* .sticky .main-menu-box:hover .main-menu-bottom { */
+.sticky .main-menu-box:hover .main-menu-bottom,
 .sticky .main-menu-box:active .main-menu-bottom {
   display: flex;
   gap: 8rem;
