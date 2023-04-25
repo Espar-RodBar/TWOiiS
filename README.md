@@ -2,7 +2,7 @@
 
 It's a fictional landing page of a toys brand seller. Just to keep working with HTML + CSS and some Javascript.
 
-https://espar-rodbar.es/TWOiiS/
+https://espar-rodbar.github.io/TWOiiS/
 
 # 01 TYPOGRAPHY SYSTEM
 
